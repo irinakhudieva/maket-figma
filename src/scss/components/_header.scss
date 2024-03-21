@@ -1,0 +1,130 @@
+.header {
+    min-height: 40px;
+    max-width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 15%;
+
+        img {
+            @include breakpoint(md) {
+                width: 96px;
+                height: 20px;
+            } 
+            @include breakpoint(sm) {
+                width: 96px;
+                height: 20px;
+            }   
+        }
+        
+    }
+
+    &__nav {
+        height: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        @include breakpoint(lx) {
+            margin-left: 10px;
+        }
+        @include breakpoint(lg) {
+            margin-left: 25px;
+        }
+        @include breakpoint(md) {
+            display: none;
+        } 
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            li {
+                color: $white;
+                font-family: $font-accent;
+                font-weight: 400;
+                font-size:  14px;
+                line-height: 41px;
+                padding: 0 10px;
+                cursor: pointer;
+                @include breakpoint(lg) {
+                    font-size: 13px;
+                    padding: 0 4px;
+                }
+            }
+        }
+    }
+
+    &__contact {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        @include breakpoint(lx) {
+            flex-wrap: wrap;
+        }
+        @include breakpoint(lg) {
+            width: 60px;
+            flex-wrap: nowrap;
+        }
+        @include breakpoint(md) {
+            flex-wrap: nowrap;
+            width: 120px;
+        }
+        
+
+        &-icon {
+            border-radius: 50%;
+            border: 1px solid $white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            @include breakpoint(lx) {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &-menu {
+            display: none;
+            border-radius: 50%;
+            border: 1px solid $white;
+            width: 40px;
+            height: 40px;
+            @include breakpoint(md) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+        }
+
+        span {  
+            font-family: $font-accent;
+            font-weight: 600;
+            font-size:  18px;
+            line-height: 41px;
+            font-size: 13px;
+            text-shadow: 4px 10px 5px rgba(24,24,24,0.67);
+            
+            @include breakpoint(lg) {
+                display: none;
+            } 
+            
+        }
+    }
+
+    
+}

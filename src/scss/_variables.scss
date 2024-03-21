@@ -1,0 +1,22 @@
+$font-main: 'Raleway', sans-serif;
+$font-accent: 'Montserrat', serif;
+
+$background: #133457;
+$dark-text: #07305D;
+$white: #fff;
+
+
+@mixin breakpoint($point) {
+    @if $point == lx {
+        @media (max-width: 1350px) {@content;}
+    }
+    @else if $point == lg {
+        @media (max-width: 900px) {@content;}
+    }
+    @else if $point == md {
+        @media (max-width: 730px) {@content;}
+    }
+    @else if $point == sm {
+        @media (max-width: 580px) {@content;}
+    }
+}
