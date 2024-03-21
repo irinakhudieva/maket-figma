@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/maket-figma/static/css/main.f24a4b01.css",
+    "main.js": "/maket-figma/static/js/main.cb9bc859.js",
+    "static/media/background.png": "/maket-figma/static/media/background.5db03ea214642951bb0b.png",
+    "static/media/mentor.png": "/maket-figma/static/media/mentor.1f9656d0f5a042f1e350.png",
+    "index.html": "/maket-figma/index.html",
+    "main.f24a4b01.css.map": "/maket-figma/static/css/main.f24a4b01.css.map",
+    "main.cb9bc859.js.map": "/maket-figma/static/js/main.cb9bc859.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f24a4b01.css",
+    "static/js/main.cb9bc859.js"
+  ]
+}
