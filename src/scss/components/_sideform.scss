@@ -17,9 +17,7 @@
         flex-direction: column;
         @include breakpoint(lg) {
             width: 70vw;
-            height: 100hv;
             padding: 30px;
-            // overflow: scroll;
         }
         @include breakpoint(md) {
             width: 70vw;
